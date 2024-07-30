@@ -1,11 +1,25 @@
-import Link from "next/link";
+import { revalidatePath } from "next/cache";
+import Parser from "~/components/block/parser";
+import { SkillTable } from "~/components/block/skillTable";
+import { Button } from "~/components/ui/button";
+import {
+  Card,
+  CardContent,
+  // CardDescription,
+  // CardFooter,
+  CardHeader,
+  CardTitle,
+} from "~/components/ui/card";
+import { SeperatorWithLabel } from "~/components/ui/separator";
+import { Textarea } from "~/components/ui/textarea";
+import { fetchAllSkillGroupsInfo } from "~/server/action";
 
-export default function HomePage() {
+export const dynamic = "force-dynamic";
+
+export default async function HomePage() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-center bg-gradient-to-b from-[#2e026d] to-[#15162c] text-white">
-      <div className="container flex flex-col items-center justify-center gap-12 px-4 py-16">
-        Work In Progress
-      </div>
+    <main className="grid flex-1 items-start gap-4 p-4 sm:px-6 sm:py-0 md:gap-8">
+      <Parser />
     </main>
   );
 }
