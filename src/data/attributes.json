@@ -1,0 +1,20 @@
+{
+  "mass": 4,
+  "capacity": 38,
+  "volume": 161,
+  "radius": 162,
+  "charisma": 164,
+  "intelligence": 165,
+  "memory": 166,
+  "perception": 167,
+  "willpower": 168,
+  "primary_attribute": 180,
+  "secondary_attribute": 181,
+  "primary_skill_required": 182,
+  "secondary_skill_required": 183,
+  "training_multiplier": 275,
+  "skill_points": 276,
+  "required_skill_level_for_primary_skill": 277,
+  "skill_level": 280,
+  "omega_skill": 1047
+}
